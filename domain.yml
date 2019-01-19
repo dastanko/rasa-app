@@ -1,39 +1,48 @@
 intents:
-- greet
-- goodbye
-- thanks
-- deny
-- joke
-- name
-
-
-entities:
-- name
-
-
-slots:
-  name:
-    type: text
+  - greet
+  - goodbye
+  - thanks
+  - question
+  - internship
+  - about_company
+  - courses
 
 
 actions:
-- utter_name
-- utter_thanks
-- utter_greet
-- utter_goodbye
-- action_joke
+  - utter_greet
+  - utter_greet_and_ask
+  - utter_thanks
+  - utter_goodbye
+  - utter_ask
+  - utter_courses
+  - utter_about_company
+  - utter_internship
+  - action_joke
 
 
 templates:
-  utter_name:
-  - text: "Hey there! Tell me your name."
-
   utter_greet:
-  - text: "Nice to you meet you {name}. How can I help?"
+    - text: "Hello"
+
+  utter_ask:
+    - text: "What can I do for you?"
+
+  utter_greet_and_ask:
+    - text: "Hello, What can I do for you?"
+
+  utter_courses:
+    - text: "You can go to http://www.attractor-school.com for more information about course."
+
+  utter_internship:
+    - text: "For internship you have to fill out form here https://bit.ly/2FDWOaC"
+
+  utter_about_company:
+    - text: "The history of the Attractor Software started with establishment Public Foundation «IT Attractor» in 2012.
+    The mission of the IT Attractor Foundation is to develop the software and IT services market in the Kyrgyz Republic and Central Asia.
+    The primary task that we set for ourselves is to provide the market with quality personnel and expertise."
 
   utter_goodbye:
-  - text: "Talk to you later!"
-  
+    - text: "See you!"
+
   utter_thanks:
-  - text: "My pleasure."
-  
+    - text: "My pleasure."
