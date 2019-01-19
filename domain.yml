@@ -18,6 +18,7 @@ actions:
   - utter_about_company
   - utter_internship
   - action_joke
+  - fallback_action
 
 
 templates:
