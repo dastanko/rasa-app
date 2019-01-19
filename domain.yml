@@ -6,7 +6,7 @@ intents:
   - internship
   - about_company
   - courses
-
+  - приветствие
 
 
 actions:
@@ -20,6 +20,9 @@ actions:
   - utter_internship
   - action_joke
   - fallback_action
+  - utter_скажи_привет
+  - utter_send_monthly_rate_info
+  - utter_send_hourly_rate_info
 
 
 slots:
@@ -67,9 +70,12 @@ templates:
 
   utter_thanks:
     - text: "My pleasure."
-   
-   utter_send_hourly_rate_info
+
+  utter_send_hourly_rate_info:
     - text: "Hourly rate is 20-50$"
-    
-   utter_send_monthly_rate_info
+
+  utter_send_monthly_rate_info:
     - text: "Monthly rate for 1 developer 1700-4000$"
+
+  utter_скажи_привет:
+    - text: "Привет, чем могу помочь?"

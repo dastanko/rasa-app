@@ -21,13 +21,16 @@
 ## story_about_company_01
 * about_company
  - utter_about_company
- - slot{“pricing_option”:”hourly_rate”}
+ - slot{"pricing_option":"hourly_rate"}
  - utter_send_hourly_rate_info
  
  ## story_about_company_02
 * about_company
  - utter_about_company
- - slot{“pricing_option”:”monthly_rate”}
+ - slot{"pricing_option":"monthly_rate"}
  - utter_send_monthly_rate_info
  
 
+## story_приветствие
+* приветствие
+ - utter_скажи_привет
