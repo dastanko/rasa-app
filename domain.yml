@@ -8,6 +8,7 @@ intents:
   - courses
 
 
+
 actions:
   - utter_greet
   - utter_greet_and_ask
@@ -20,6 +21,15 @@ actions:
   - action_joke
   - fallback_action
 
+
+slots:
+   pricing_option:
+      type: categorical
+      values:
+      - hourly_rate
+      - monthly_rate
+      - team_rent
+      - fixed_price_project
 
 templates:
   utter_greet:
@@ -41,6 +51,16 @@ templates:
     - text: "The history of the Attractor Software started with establishment Public Foundation «IT Attractor» in 2012.
     The mission of the IT Attractor Foundation is to develop the software and IT services market in the Kyrgyz Republic and Central Asia.
     The primary task that we set for ourselves is to provide the market with quality personnel and expertise."
+      buttons:
+      - title: "Hourly Rate"
+        payload: '/choose{"pricing_option": "hourly_rate"}'
+      - title: "Monthly Rate"
+        payload: '/choose{"pricing_option": "monthly_rate"}'
+      - title: "Team Rent"
+        payload: '/choose{"pricing_option": "team_rent"}'
+      - title: "Fixed Price Project"
+        payload: '/choose{"pricing_option": "fixed_priced_project"}'
+
 
   utter_goodbye:
     - text: "See you!"
