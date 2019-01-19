@@ -67,7 +67,7 @@
 - good, thank you!
 - thank you for your answer!
 
-##intent:question
+## intent:question
 - to whom it may concern
 - hello! Could you please help me?
 - hi! Can I ask?
